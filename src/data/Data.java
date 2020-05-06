@@ -10,23 +10,26 @@ import org.jsoup.select.Elements;
 
 public class Data {
     HashMap<String, String> url;
+    
+    private static String userStock = null;
 
     public Data() {
         this.url = new HashMap<String, String>();
-        this.url.put("Large Cap",
-                "https://www.tradingview.com/markets/stocks-usa/market-movers-large-cap/");
-        this.url.put("Gainers",
-                "https://www.tradingview.com/markets/stocks-usa/market-movers-gainers/");
-        this.url.put("Losers",
-                "https://www.tradingview.com/markets/stocks-usa/market-movers-losers/");
-        this.url.put("Active",
-                "https://www.tradingview.com/markets/stocks-usa/market-movers-active/");
-        this.url.put("Volatile",
-                "https://www.tradingview.com/markets/stocks-usa/market-movers-most-volatile/");
-        this.url.put("Overbought",
-                "https://www.tradingview.com/markets/stocks-usa/market-movers-overbought/");
-        this.url.put("Oversold",
-                "https://www.tradingview.com/markets/stocks-usa/market-movers-oversold/");
+        this.url.put("Large Cap", "https://www.tradingview.com/markets/stocks-usa/market-movers-large-cap/");
+        this.url.put("Gainers", "https://www.tradingview.com/markets/stocks-usa/market-movers-gainers/");
+        this.url.put("Losers", "https://www.tradingview.com/markets/stocks-usa/market-movers-losers/");
+        this.url.put("Active", "https://www.tradingview.com/markets/stocks-usa/market-movers-active/");
+        this.url.put("Volatile", "https://www.tradingview.com/markets/stocks-usa/market-movers-most-volatile/");
+        this.url.put("Overbought", "https://www.tradingview.com/markets/stocks-usa/market-movers-overbought/");
+        this.url.put("Oversold", "https://www.tradingview.com/markets/stocks-usa/market-movers-oversold/");
+    }
+    
+    public static void setStock(String ticker) {
+        userStock = ticker;
+    }
+    
+    public static String getStock() {
+        return userStock;
     }
 
     public ArrayList getStockData(String type) {
@@ -35,8 +38,7 @@ public class Data {
         try {
             Document doc = Jsoup.connect(this.url.get(type)).get();
 //            "tr.tv-data-table__row tv-data-table__stroke tv-screener-table__result-row"
-            Elements links = doc.select(
-                    ".tv-data-table__row.tv-data-table__stroke.tv-screener-table__result-row");
+            Elements links = doc.select(".tv-data-table__row.tv-data-table__stroke.tv-screener-table__result-row");
 //            Elements links = doc
 //                    .select("div.tv-screener-table__symbol-right-part");
 
@@ -45,10 +47,10 @@ public class Data {
                 Elements data = link.getAllElements();
                 stocks.add(new Stock(data));
                 /*
-                 * 0 - all 1-3 - full name 4 - stock name 5 - company name 6 -
-                 * price 7 - percent change 8 - change 9-10 - recommendation 11
-                 * - volume 12 - market cap 13 - Price-to-Earnings Ratio 14 -
-                 * Earning Per Share 15 - # of employees 16-18 - Sector
+                 * 0 - all 1-3 - full name 4 - stock name 5 - company name 6 - price 7 - percent
+                 * change 8 - change 9-10 - recommendation 11 - volume 12 - market cap 13 -
+                 * Price-to-Earnings Ratio 14 - Earning Per Share 15 - # of employees 16-18 -
+                 * Sector
                  */
 
 //                int i = 0;

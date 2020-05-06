@@ -17,10 +17,10 @@ public class Stock {
     private String employees;
     private String sec;
     /*
-     * 0 - all 1-3 - full name 4 - stock name 5 - company name 6 - price 7 -
-     * percent change 8 - change 9-10 - recommendation 11 - volume 12 - market
-     * cap 13 - Price-to-Earnings Ratio 14 - Earning Per Share 15 - # of
-     * employees 16-18 - Sector
+     * 0 - all 1-3 - full name 4 - stock name 5 - company name 6 - price 7 - percent
+     * change 8 - change 9-10 - recommendation 11 - volume 12 - market cap 13 -
+     * Price-to-Earnings Ratio 14 - Earning Per Share 15 - # of employees 16-18 -
+     * Sector
      */
 
     public Stock(Elements data) {
@@ -87,13 +87,10 @@ public class Stock {
     }
 
     public String toString() {
-        return "SECTOR:\t\t" + this.sec + "\n" + "STOCK:\t\t" + this.stock
-                + "\n" + "COMPANY:\t" + this.company + "\n" + "PRICE:\t\t"
-                + this.price + "\n" + "CHANGE:\t\t" + this.change + "\n"
-                + "% CHANGE:\t" + this.pChange + "\n" + "VOLUME:\t\t" + this.vol
-                + "\n" + "Price/Earnings:\t" + this.p2e + "\n"
-                + "Earnings/Share:\t" + this.eps + "\n" + "MARKET CAP:\t"
-                + this.cap + "\n" + "# of EMPLOYEES:\t" + this.employees + "\n"
+        return "SECTOR:\t\t" + this.sec + "\n" + "STOCK:\t\t" + this.stock + "\n" + "COMPANY:\t" + this.company + "\n"
+                + "PRICE:\t\t" + this.price + "\n" + "CHANGE:\t\t" + this.change + "\n" + "% CHANGE:\t" + this.pChange
+                + "\n" + "VOLUME:\t\t" + this.vol + "\n" + "Price/Earnings:\t" + this.p2e + "\n" + "Earnings/Share:\t"
+                + this.eps + "\n" + "MARKET CAP:\t" + this.cap + "\n" + "# of EMPLOYEES:\t" + this.employees + "\n"
                 + "RECOMMENDATION:\t" + this.rec + "\n";
     }
 
