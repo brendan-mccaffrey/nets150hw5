@@ -12,12 +12,19 @@ To setup our program on your own machine simply download/clone this repo into a 
 #### Welcome Screen
 Upon running the program, you will be presented with the following 'Welcome Screen':
 <img src = "images/1.png" width = 500>
-
+#### 2 Screen
 <img src = "images/2.png" width = 500>
+#### 3 Screen
 <img src = "images/3.png" width = 500>
+#### 4 Screen
 <img src = "images/4.png" width = 500>
+#### 5 Screen
 <img src = "images/5.png" width = 500>
+#### 6 Screen
 <img src = "images/6.png" width = 500>
+#### 7 Screen
 <img src = "images/7.png" width = 500>
+#### 8 Screen
 <img src = "images/8.png" width = 500>
+#### 9 Screen
 <img src = "images/9.png" width = 500>
