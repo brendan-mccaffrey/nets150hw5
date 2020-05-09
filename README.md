@@ -53,4 +53,4 @@ Here is what your recommendation will look like for a full portfolio. You will r
 <img src = "images/9.png" width = 500>
 
 ## Final Remarks
-And that's it! We have developed for you an easy-to-use, powerful tool that works in real-time and will enable you to get an edge over the competition and step-up your investing game to the next level. Enjoy!
+And that's it! We have developed for you an easy-to-use, powerful tool that works in real-time and will enable you to get an edge over the competition and step-up your investing game to the next level. We hope you enjoy it and best of luck investing!
