@@ -8,7 +8,7 @@ The application presents the user with a welcome screen in which he/she can inpu
 
 ## Running the Program
 #### Setup
-To setup our program on your own machine simply download/clone this repo into a java editor such as [Eclipse](https://www.eclipse.org/downloads/), and configure your build path to include the Jsoup.jar and run main in our Main.java file. And that's it! It's really that simple.
+To setup our program on your own machine simply download/clone this repo into a java editor such as [Eclipse](https://www.eclipse.org/downloads/), and configure your build path to include the [Jsoup.jar](https://jsoup.org/download) and have your program run main in our Main.java file. And that's it! It's really that simple.
 
 #### Welcome Screen
 Upon running the program, you will be presented with the following Welcome Screen:
