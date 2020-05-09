@@ -1,4 +1,4 @@
-# The Stock Prophecy
+# The Stock Prophecy User Manual
 
 This program, developed by myself and my good friend [Manny Kuflik](https://github.com/MannyKuflik), is a simple Java application that utilizes web scraping, cosine similarity vectors, and Java Swing UI to give the user an enjoyable and valuable experience. 
 
