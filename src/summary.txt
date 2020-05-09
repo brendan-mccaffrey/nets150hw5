@@ -1,0 +1,42 @@
+In addition, please submit a 1 page summary.txt file – t
+his should contain the name and description of your 
+project (4-5 sentences), describe which of the categories 
+you used from the above, and the actual work breakdown (who did what).
+
+Project Name: 
+The Cosine Stock Prophecy
+
+Categories:	
+• Information Networks (Web-Search, Web-Scraping)			
+• Document Search (Information Retrieval, Cosine Similarity)
+
+
+Project Description:
+For our project we built a tool that helps people find stocks to
+invest in. The user inputs their name, along with a stock they
+are currently interested in, and can choose to search stocks based on
+their sector or their current market trend. Finally the user selects 
+whether they want to receive a single stock recommendation, or an entire
+portfolio recommendation comprised of 10 stocks. Our project works by first 
+using Jsoup to pull current data about the specific stock the user input
+into a new Stock object. Next Jsoup connects to a url on tradingview.com t
+hat changes based on the trend/sector the user selected and creates an
+ArrayList of Stocks from the scraped data. Finally the stocks are
+converted into vectors containing each stock,s price, daily percent change,
+volume, market cap, price-to-earnings ratio, and earnings per share as the 
+weights and the cosine similarity is calculated between the chosen stock
+and each of the ones in the ArrayList. If the user selects a single stock, 
+the stock with the highest cosine similarity is recommended to the user 
+and if the user selects a portfolio the stocks with the 10 highest cosine 
+similarities are recommended.
+
+Who did what:
+Emanuel - The webscraping part that pulls an ArrayList of stocks from 
+tradingview.com and the webscraping that finds data on the stock the user 
+input's from finance.yahoo.com
+Brendan - Initially set up the UI in GUI.java. Also handled converting the 
+stocks into vectors and creating functions for finding the dotproduct, 
+magnitude, and cosine similarities of the stock vectors.
+Together - Finalizing the UI, determining how to return our recommendation 
+to the user, and figuring out how to implement offering the user different 
+search options for finding a stock.
