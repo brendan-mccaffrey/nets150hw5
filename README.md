@@ -1,4 +1,4 @@
-# The Stock Prophecy User Manual
+# The Cosine Stock Prophecy User Manual
 
 This program, developed by [Brendan McCaffrey](https://github.com/brendan-mccaffrey) and [Emanuel Kuflik](https://github.com/MannyKuflik), is a simple Java application that utilizes web scraping, cosine similarity vectors, and Java Swing UI to give the user an enjoyable and valuable experience. 
 
