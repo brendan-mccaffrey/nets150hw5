@@ -2,11 +2,11 @@
 
 This program, developed by Brendan McCaffrey and [Emanuel Kuflik](https://github.com/MannyKuflik), is a simple Java application that utilizes web scraping, cosine similarity vectors, and Java Swing UI to give the user an enjoyable and valuable experience. 
 
-### Project Description
+## Project Description
 
 The application presents the user with a welcome screen in which he/she can input his/her name and the ticker of a stock they like, along with other optional settings. The user then selects to receive a single stock recommendation or a full portfolio of stocks put together by our algorithms. Our program utilizes cosine similarity and real-time web-scraping of financial information to come up with the best stocks for the user. Perfect for coming up with new investing ideas or finding companies you'd probably be interested in, that you may have never considered.
 
-### Running the Program
+## Running the Program
 #### Setup
 To setup our program on your own machine simply download/clone this repo into a java editor such as [Eclipse](https://www.eclipse.org/downloads/), and configure your build path to include the Jsoup.jar and run main in our Main.java file. And that's it! It's really that simple.
 
@@ -52,5 +52,5 @@ Here is what your recommendation will look like for a full portfolio. You will r
 
 <img src = "images/9.png" width = 500>
 
-### Final Remarks
+## Final Remarks
 And that's it! We have developed for you an easy-to-use, powerful tool that works in real-time and will enable you to get an edge over the competition and step-up your investing game to the next level. Enjoy!
